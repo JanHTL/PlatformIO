@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "Ultraschallsensor",
+			"path": "."
+		},
+		{
+			"name": "testing arduino uno",
+			"path": "../testing arduino uno"
+		},
+		{
+			"name": "switching between pot and sens",
+			"path": "../switching between pot and sens"
+		},
+		{
+			"name": "stepper motor ansteuerung",
+			"path": "../stepper motor ansteuerung"
+		}
+	],
+	"settings": {}
+}

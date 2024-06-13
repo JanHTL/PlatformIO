@@ -1,0 +1,9 @@
+{
+    "vscode-serial-monitor.customBaudRates": [
+        76800
+    ],
+    "vscode-serial-monitor.lineEnding": "\r",
+    "vscode-serial-monitor.dataBits": 8,
+    "vscode-serial-monitor.parity": "none",
+    "vscode-serial-monitor.stopBits": 1
+}

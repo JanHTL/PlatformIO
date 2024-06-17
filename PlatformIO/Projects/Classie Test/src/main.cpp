@@ -17,6 +17,7 @@
 
 #include "cli.h"
 #include "cmd.h"
+#include "nec.h"
 #include "timer2.h"
 #include "sfr328p.h"
 #include "statusbar.h"
@@ -61,6 +62,15 @@ int main()
 			else
 				cliPrintPrompt(TXT_GREEN, STANDARD_PROMPT, MAIN_LEVEL);    // Print UART prompt to show, that the ISR-driven UART interface is available
 		}
+
+        if (necProcessRxData())     // If necProcessRxData() returns 1, a received NEC command can be processed
+        {
+            printf("Address: %0X\n", necGetProcessedRxData(0));
+            printf("!Address: %0X\n", necGetProcessedRxData(1));
+            printf("Command: %0X\n", necGetProcessedRxData(2));
+            printf("!Command: %0X\n", necGetProcessedRxData(3));
+
+        }
         
         if (cliGetStatusBarFlag() == 1 && seconds != timer2GetSeconds())
         {

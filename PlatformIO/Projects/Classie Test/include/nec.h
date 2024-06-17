@@ -1,12 +1,12 @@
 /*
- * File:            timer1.h
+ * File:            nec.h
  * Author:          
- * Date Created:    DD.MM.YYYY
+ * Date Created:    02.06.2024
  * Version: 1.0:    DD.MM.YYYY
  * Last Modified:   DD.MM.YYYY
  *
  * Description:
- * Providing functions to ...
+ * Providing functions to receive and send NEC-Protocoll signals
  *
  * License:
  * This code is released under Creative Commons Legal Code CC0 1.0 Universal
@@ -15,8 +15,8 @@
  * email
  */
 
-#ifndef TEMPLATE_H_INCLUDED
-#define TEMPLATE_H_INCLUDED
+#ifndef NEC_H_INCLUDED
+#define NEC_H_INCLUDED
 
 #ifdef __cplusplus
 extern "C" {
@@ -25,6 +25,9 @@ extern "C" {
 /****************************************************/
 // GLOBAL DEFINES
 /****************************************************/
+
+#define NEC_CAPTURE_ARRAY_SIZE  67
+#define NEC_DATA_ARRAY_SIZE      4
 
 /****************************************************/
 // GLOBAL STRUCT DEFINITION
@@ -42,11 +45,17 @@ extern "C" {
 // GLOBAL FUNCTIONS
 /****************************************************/
 
-uint8_t timer1StartInputCapture(volatile uint32_t *captureArray, volatile uint32_t captureArraySize);
+// Start receiving pulses of NEC remote controls
+// using timer1StartInputCapture
+void necStartReceiving();
 
-volatile uint32_t timer1GetCaptureArrayIndex();
+// Process received NEC pulses until the number of bytes
+// defined in NEC_DATA_ARRAY_SIZE has been reveived
+int8_t necProcessRxData();
 
-volatile uint32_t timer1GetOverflowCounter();
+// Get processed data by index
+// nax index: NEC_DATA_ARRAY_SIZE - 1
+uint8_t necGetProcessedRxData(uint8_t index);
 
 #ifdef __cplusplus
 }

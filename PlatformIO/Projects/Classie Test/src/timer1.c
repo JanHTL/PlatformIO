@@ -73,6 +73,15 @@ uint8_t timer1StartInputCapture(volatile uint32_t *captureArray, volatile uint32
     return 1;
 }
 
+volatile uint32_t timer1GetCaptureArrayIndex()
+{
+    return this.captureArrayIndex;
+}
+
+volatile uint32_t timer1GetOverflowCounter(){
+    return this.overflowCounter;
+}
+
 ISR(TIMER1_OVF_vect)
 {
     this.overflowCounter++;

@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"vscode-serial-monitor.customBaudRates": [
+			76800
+		],
+		"vscode-serial-monitor.dataBits": 8,
+		"vscode-serial-monitor.lineEnding": "\r",
+		"vscode-serial-monitor.parity": "none",
+		"vscode-serial-monitor.stopBits": 1,
+		"vscode-serial-monitor.logFileDirectory": "C:\\Users\\iris06\\OneDrive\\Dokumente\\PlatformIO\\Projects\\Classie"
+	}
+}

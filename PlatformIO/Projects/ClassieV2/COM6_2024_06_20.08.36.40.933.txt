@@ -1,0 +1,6 @@
+[2J[H[0m[32mRobotic Nano Command Line Interface[0m
+Compiled on Jun 17 2024 at 11:06:01
+Press Ctrl+D or enter "dc" to list [4md[0mefault [4mc[0mommands
+[32mAVR>[0m[?25h;1A;CH+;0x00FF1234[?25l
+Unknown command: [;1A;CH+;0x00FF1234]
+[32mAVR>[0m[?25h

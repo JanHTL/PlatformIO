@@ -1,0 +1,25 @@
+[2J[H[0m[32mRobotic Nano Command Line Interface[0m
+Compiled on Jun  9 2024 at 22:50:40
+Press Ctrl+D or enter "dc" to list [4md[0mefault [4mc[0mommands
+[32mAVR>[0m[?25hR
+NEC-Command received!
+Address:	00	  0
+~Address:	FF	255
+Command:	09	  9
+~Command:	F6	246
+Transmission successfull!
+[31mAVR>[0m[?25hG
+NEC-Command received!
+Address:	00	  0
+~Address:	FF	255
+Command:	08	  8
+~Command:	F7	247
+Transmission successfull!
+[32mAVR>[0m[?25hB
+NEC-Command received!
+Address:	00	  0
+~Address:	FF	255
+Command:	0A	 10
+~Command:	F5	245
+Transmission successfull!
+[94mAVR>[0m[?25h
